@@ -137,6 +137,15 @@ body{
     left: 20px;
 }
 
+#close{
+    display: none;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
 /*todo Home Page */
 
 #hero{
@@ -307,6 +316,20 @@ body{
     position: absolute;
     bottom: 20px;
     right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.product .pro .cart:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #d4f0e0; /* Màu nền thay đổi khi hover */
+    animation: blink 1s ease infinite;
+}
+
+@keyframes blink {
+    0% { background-color: #e8f6ea; }
+    50% { background-color: #c4f4d0; }
+    100% { background-color: #e8f6ea; }
 }
 
 #banner{
@@ -341,9 +364,11 @@ body{
 }
 
 #sm-banner{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    gap: 2.5rem;
 }
 
 #sm-banner .banner-box{
@@ -353,10 +378,15 @@ body{
     align-items: flex-start;
     text-align: center;
     background: url(../banner/b17.jpg) center/cover no-repeat;
-    width: 43vw;
+    /* width: 43vw;
     min-width: 580px;
     height: 50vh;
-    padding: 30px;
+    padding: 30px; */
+    width: 100%;
+    border-radius: 1rem;
+    aspect-ratio: 16/8;
+    object-fit: cover;
+    padding: 30px ;
 }
 
 #sm-banner .banner-box2{
@@ -393,6 +423,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 80px;
+    /* display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill, 
+    minmax(200px,1fr));
+    padding: 0 80px; */
 }
 
 #banner3 .banner-box{
@@ -402,10 +438,12 @@ body{
     align-items: flex-start;
     text-align: center;
     background: url(../banner/b7.jpg) center/cover no-repeat;
-    min-width: 30%;
+    /* aspect-ratio: 16/8; */
+    width: 30%;
     height: 30vh;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 1rem;
 }
 
 #banner3 .banner-box2{
@@ -458,9 +496,13 @@ body{
     color: #ffbd27;
 }
 
+#newsletter form{
+    width: 40%;
+}
+
 #newsletter .form{
     display: flex;
-    width: 40%;
+    width: 100%;
     align-items: center;
 }
 
@@ -543,4 +585,224 @@ footer a:hover{
 footer .copyright{
     width: 100%;
     text-align: center;
+}
+
+/*todo Start Media Query */
+
+@media (max-width: 1112px){
+    #sm-banner .banner-box{
+        
+        min-height: 30vh;
+    }
+}
+
+@media (min-width: 769px) {
+    #sm-banner {
+        grid-template-columns: repeat(auto-fill, 
+        minmax(500px,1fr));
+    }
+    /* #sm-banner .banner-box{
+        
+        flex: 1;
+    }
+
+    #banner3 .banner-box{
+        flex: 1;
+    } */
+}
+
+@media (max-width: 768px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    #navbar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right:0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        text-decoration: none;
+        
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 2.4rem;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left: 30px;
+        color: #222;
+        font-size: 2.4rem;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+
+    .product .pro-container {
+        justify-content: center;
+    }
+
+    .product .pro{
+        margin: 20px;
+    }
+
+    #banner{
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 40vh;
+        border-radius: 15px;
+        margin: 10px 0;
+    }
+
+    #banner3{
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box{
+        width: 28%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #newsletter form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 677px){
+    .section-p1{
+        padding: 20px;
+    }
+
+    #banner{
+        height: 30vh;
+    }
+
+    .product .pro{
+        width: 70%;
+    }
+
+    #banner3{
+        padding: 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+}
+
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+
+    #header{
+        padding: 10px 30px;
+    }
+
+    h1{
+        font-size: 3.8rem;
+    }
+
+    h2{
+        font-size: 3.2rem;
+    }
+
+    #hero{
+        height: 60vh;
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #feature{
+        justify-content: space-between;
+    }
+
+    #feature .fe-box{
+        /* min-width: 150px; */
+        margin: 0 0 15px 0;
+    }
+
+    .product .pro{
+        width: 100%;
+    }
+
+    #banner{
+        height: 30vh;
+    }
+
+    #banner3{
+        padding: 0 20px;
+    }
+
+    #sm-banner .banner-box{
+        height: 40%;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+
+    #newsletter{
+        padding:  40px 20px;
+    }
+
+    #newsletter form{
+        width: 100%;
+    }
+
+    footer .copyright{
+        text-align: start;
+    }
+}
+
+@media (max-width: 420px){
+    #feature .fe-box{
+        width: 44%;
+        min-width: 140px;
+    }
 }
