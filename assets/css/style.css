@@ -436,7 +436,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    text-align: center;
+    /* text-align: center; */
     background: url(../banner/b7.jpg) center/cover no-repeat;
     /* aspect-ratio: 16/8; */
     width: 30%;
