@@ -705,6 +705,8 @@ footer .copyright{
 #prodetails .single-pro-details span{
     line-height: 25px;
     font-size: 1.6rem;
+    display: block;
+    text-align: justify;
 }
 
 /*todo Start Media Query */
