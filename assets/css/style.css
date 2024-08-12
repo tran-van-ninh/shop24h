@@ -782,6 +782,50 @@ footer .copyright{
     z-index: -8;
 }
 
+/*todo About Page */
+
+#page-header.about-header{
+    background-image: url(../img/about/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#about-head div abbr, #about-head div marquee{
+    font-size: 1.6rem;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 /*todo Start Media Query */
 
 @media (max-width: 1112px){
@@ -804,6 +848,10 @@ footer .copyright{
     #banner3 .banner-box{
         flex: 1;
     } */
+
+    #banner3 .banner-box{
+        min-height: 200px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1032,6 +1080,24 @@ footer .copyright{
 
     #blog .blog-details {
         text-align: justify;
+        width: 100%;
+    }
+
+    /*todo About Page */
+    #about-head{
+        flex-direction: column;
+    }
+
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div{
+        padding: 0;
+    }
+
+    #about-app .video{
         width: 100%;
     }
 }
