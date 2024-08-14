@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!--! Header -->
+    <section id="header">
+        <a href="#">
+            <img src="../assets/img/logo.png" class="logo" alt="">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id = "lg-bag" >
+                    <a class="active" href="cart.html">
+                        <!-- <span class="material-symbols-outlined">
+                            shopping_bag
+                        </span> -->
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <!--! header mobile -->
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- todo Home Page  -->
+    <section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from!</p>
+    </section>
+
+    <!--todo Cart -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="../assets/img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="../assets/img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="../assets/img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--todo Cart Adđ -->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$78</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$78</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!--todo footer -->
+    <footer class="section-p1">
+        <div class="container-footer">
+            <div class="col">
+                <img class="logo" src="../assets/img/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Nam Trung, Tiền Hải, Thái Bình</p>
+                <p><strong>Phone:</strong> +0123 456 789 / (+84)123 456 789</p>
+                <p><strong>Hours:</strong> 08:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+    
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+    
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="../assets/img/pay/app.jpg" alt="">
+                    <img src="../assets/img/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="../assets/img/pay/pay.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>©️ 2024, Tech2 etc - HTML CSS E-commerce Template</p>
+        </div>
+    </footer>
+</body>
+<script src="../js/main.js"></script>
+</html>
