@@ -1280,6 +1280,12 @@ footer .copyright{
         height: 40%;
     }
 
+    #sm-banner .banner-box button{
+        background-color: var(--primary-color);
+        color: #fff;
+        border: 1px solid var(--primary-color);
+    }
+
     #banner3 .banner-box{
         width: 100%;
         height: 240px;
