@@ -1269,6 +1269,7 @@ footer .copyright{
 
     #banner{
         height: 30vh;
+        min-height: 240px;
     }
 
     #banner3{
@@ -1374,6 +1375,10 @@ footer .copyright{
     #form-details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    #form-details form button{
+        width: 100%;
     }
     /*todo Cart Page */
     #cart-add{
